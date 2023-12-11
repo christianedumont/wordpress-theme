@@ -10,7 +10,7 @@ if ( have_posts() ) {
 			<!-- Résumé de l'article -->
 			<?php the_excerpt(); ?>
 			<footer class="postmetadata">
-				<p></p>
+				<p>Publié le <?php the_time('l d M Y'); ?>  par <?php the_author() ?> dans la catégorie <?php the_category(', '); ?></p>
 			</footer>
 		</article>
 	<?php }
