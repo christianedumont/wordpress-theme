@@ -1,0 +1,37 @@
+/*
+Theme Name: Bonjour
+Author: Christiane Dumont
+Author URI: https://www.consultantweb.eu
+Description: Ce thème est mis à disposition des étudiants dans un but pédagogique.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+header {
+	margin: 2rem 0;
+}
+
+h1,
+h2,
+h2 a,
+h3 {
+	color: #C00;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer.postmetadata {
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+article+article {
+	border-bottom: 1px dashed #C00;
+}
