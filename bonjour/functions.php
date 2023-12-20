@@ -9,6 +9,13 @@ function bonjour_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'bonjour_custom_excerpt_length', 999 );
 
+// Ajouter un hyperlien pour lire la suite d'un article
+function bonjour_read_more_link($output) {
+	$link = __('Read more&hellip;', 'bonjour');
+	return $output . '<a class="btn btn-outline-primary" href="'. get_permalink($post->ID) . '"> ' . $link . '</a>';
+}
+add_filter('the_excerpt', 'bonjour_read_more_link');
+
 // Supprimer la balise meta generator
 function wp_remove_version() {
 	return '';
