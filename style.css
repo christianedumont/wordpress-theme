@@ -1,0 +1,105 @@
+/*
+Theme Name: Bonjour
+Author: Christiane Dumont
+Author URI: https://www.consultantweb.eu
+Description: This theme has been developped for educational purpose.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	margin: 2rem 0;
+	padding: 1rem 2rem;
+	border-bottom: 3px solid #C00;
+}
+
+@media screen and (min-width: 1024px) {
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	header nav {
+		flex: 1;
+	}
+
+	nav ul.menu {
+		list-style: none;
+		display: flex;
+		justify-content: space-evenly;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	nav a {
+		color: #C00;
+		font-size: 1.3rem;
+	}
+}
+
+h1,
+h2,
+h2 a,
+h3 {
+	font-family: "Oswald", sans-serif;
+	color: #C00;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer.postmetadata {
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+.main-content {
+	display: grid;
+	gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+	.main-content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.main-content {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+article {
+	padding: 1rem 0;
+	border-bottom: 1px dashed #C00;
+}
+
+#footer {
+	background-color: #C00;
+	color: #FFF;
+	padding: 1rem;
+}
+
+#footer ul.menu {
+	width: 90%;
+	max-width: 600px;
+	margin: 0.5rem auto;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer a {
+	color: inherit;
+}
